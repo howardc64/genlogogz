@@ -8,7 +8,7 @@ If src != logo.mrf
 	Build binary file name newlogo.mrf with src data starting at offset 0x00000e00
 	Insert 0s before the offset
 	Pad newlogo.mrf to 8,412,672 bytes with 0s
-} else
+} else {
 	newlogo.mrf = logo.mrf
 }
 
@@ -26,5 +26,3 @@ Rename file C.tar.gz to C_$Sig_ota.tar.gz
 Testing
 
 Check included file A and B as test case
-
-}
